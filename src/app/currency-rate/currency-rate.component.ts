@@ -5,11 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './currency-rate.component.html',
   styleUrls: ['./currency-rate.component.scss']
 })
-export class CurrencyRateComponent implements OnInit {
+export class CurrencyRateComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  items = [{name: 'jean', surname: 'kruger'}, {name: 'bobby', surname: 'marais'}];
 
 }

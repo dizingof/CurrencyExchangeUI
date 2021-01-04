@@ -6,16 +6,20 @@ import { AppComponent } from './app.component';
 import { CurrencyRateComponent } from './currency-rate/currency-rate.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { KeysPipe } from './keys.pipe';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     CurrencyRateComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    KeysPipe
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],
