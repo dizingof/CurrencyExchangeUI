@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "currencyexchange-800cc"
+  },
+  "targets": {
+    "currencyexchange-800cc": {
+      "hosting": {
+        "CurrencyExchange": [
+          "currencyexchange-800cc"
+        ]
+      }
+    }
+  }
+}

@@ -8,6 +8,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { KeysPipe } from './keys.pipe';
 import {FormsModule} from '@angular/forms';
+import {UsdRateService} from './Services/usd-rate.service';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,9 +22,12 @@ import {FormsModule} from '@angular/forms';
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    UsdRateService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
