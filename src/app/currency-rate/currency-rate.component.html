@@ -1,8 +1,12 @@
-
-<ul>
-  <li *ngFor="let currency of currencies">
-    <p>Название: {{currency?.Name}}</p>
-    <p>Покупка: {{currency?.Buy}}</p>
-    <p>Продажа: {{currency?.Sell}}</p>
-  </li>
-</ul>
+<table class="table">
+  <tr>
+    <th align="left">Название банка</th>
+    <th>Покупка</th>
+    <th>Продажа</th>
+  </tr>
+  <tr *ngFor="let currency of currencies">
+    <th align="left" class="select">{{currency?.Name}}</th>
+    <th class="select">{{currency?.Buy}}</th>
+    <th class="select" >{{currency?.Sell}}</th>
+  </tr>
+</table>
