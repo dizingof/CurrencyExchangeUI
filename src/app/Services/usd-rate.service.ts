@@ -8,6 +8,6 @@ export class UsdRateService {
   }
 
  getUsdCurrency(){
-    return this.http.get('https://kursvalut.somee.com/api/CurrencyRateList/GetCurrencyList');
+    return this.http.get('https://kursvalut.somee.com/api/CurrencyRateList/GetCurrencyUsdList');
  }
 }
