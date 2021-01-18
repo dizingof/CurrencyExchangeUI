@@ -1,0 +1,12 @@
+<table class="table">
+  <tr>
+    <th align="left">Название банка</th>
+    <th>Покупка</th>
+    <th>Продажа</th>
+  </tr>
+  <tr *ngFor="let currency of currencies">
+    <th align="left" class="select">{{currency?.Name}}</th>
+    <th class="select">{{currency?.Buy}}</th>
+    <th class="select" >{{currency?.Sell}}</th>
+  </tr>
+</table>

@@ -10,4 +10,12 @@ export class UsdRateService {
  getUsdCurrency(){
     return this.http.get('https://kursvalut.somee.com/api/CurrencyRateList/GetCurrencyUsdList');
  }
+
+  getEurCurrency(){
+    return this.http.get('https://kursvalut.somee.com/api/CurrencyRateList/GetCurrencyEurList');
+  }
+
+  getRubCurrency(){
+    return this.http.get('https://kursvalut.somee.com/api/CurrencyRateList/GetCurrencyRubList');
+  }
 }

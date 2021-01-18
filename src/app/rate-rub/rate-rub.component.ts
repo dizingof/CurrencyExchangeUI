@@ -4,11 +4,11 @@ import {Currency} from '../Models/Currency';
 
 
 @Component({
-  selector: 'app-currency-rate',
-  templateUrl: './currency-rate.component.html',
-  styleUrls: ['./currency-rate.component.scss']
+  selector: 'app-rate-rub',
+  templateUrl: './rate-rub.component.html',
+  styleUrls: ['./rate-rub.component.scss']
 })
-export class CurrencyRateComponent implements OnInit{
+export class RateRubComponent implements OnInit{
 
 
   constructor(public usdRateService: UsdRateService) {
@@ -17,8 +17,7 @@ export class CurrencyRateComponent implements OnInit{
 
   ngOnInit(): void {
 
-    this.usdRateService.getUsdCurrency().subscribe(data => this.currencies = JSON.parse(JSON.stringify(data)));
+    this.usdRateService.getRubCurrency().subscribe(data => this.currencies = JSON.parse(JSON.stringify(data)));
 
   }
 }
-

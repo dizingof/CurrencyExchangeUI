@@ -3,27 +3,41 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CurrencyRateComponent } from './currency-rate/currency-rate.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { KeysPipe } from './keys.pipe';
 import {FormsModule} from '@angular/forms';
 import {UsdRateService} from './Services/usd-rate.service';
 import {HttpClientModule} from '@angular/common/http';
+import { RateUsdComponent } from './rate-usd/rate-usd.component';
+import { RateEurComponent } from './rate-eur/rate-eur.component';
+import { RateRubComponent } from './rate-rub/rate-rub.component';
+import {Routes, RouterModule} from '@angular/router';
+
+
+const appRoutes: Routes =  [
+  {path: '', component: RateUsdComponent},
+  {path: 'rateusd', component: RateUsdComponent},
+  {path: 'rateeur', component: RateEurComponent},
+  {path: 'raterub', component: RateRubComponent},
+];
 
 @NgModule({
   declarations: [
     AppComponent,
-    CurrencyRateComponent,
     HeaderComponent,
     FooterComponent,
-    KeysPipe
+    KeysPipe,
+    RateUsdComponent,
+    RateEurComponent,
+    RateRubComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [
     UsdRateService
