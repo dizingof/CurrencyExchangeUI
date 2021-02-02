@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import {LocationService} from '../Services/locationService';
+import {Coordinates} from '../Models/Сoordinates';
+import {WeatherByLocationService} from '../Services/weatherByLocationService';
+import {WeatherModel} from '../Models/WeatherModel';
+
 
 @Component({
   selector: 'app-header',
@@ -7,9 +12,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(public locationService: LocationService, public weatherByLocation: WeatherByLocationService) { }
+
+  coordinates: Coordinates;
+  public weatherModels: WeatherModel[];
 
   ngOnInit(): void {
+    this.locationService.getPosition().then(pos =>
+    {
+      this.weatherByLocation.getWeatherByCoordinates(pos.lat, pos.lng).subscribe(data => this.weatherModels = JSON.parse(JSON.stringify(data)));
+      console.log();
+    });
   }
-
 }

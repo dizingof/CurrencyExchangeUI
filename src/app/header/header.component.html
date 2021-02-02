@@ -5,4 +5,13 @@
       <a routerLink="/rateusd">USD</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a routerLink="/rateeur">EUR</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a routerLink="/raterub">RUB</a>
     </div>
   </nav>
+  <div>
+    <table class="table">
+       <tr *ngFor="let weatherModel of weatherModels">
+         <th align="left" class="select">{{weatherModel.name}}</th>
+         <th align="left" class="select">{{weatherModel.coord}}</th>
+         <th align="left" class="select">{{weatherModel.main.temp}}</th>
+       </tr>
+    </table>
+  </div>
 </header>
