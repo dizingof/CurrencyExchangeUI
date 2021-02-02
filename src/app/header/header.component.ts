@@ -22,6 +22,7 @@ export class HeaderComponent implements OnInit {
     {
       this.weatherByLocation.getWeatherByCoordinates(pos.lat, pos.lng).subscribe(data => this.weatherModels = JSON.parse(JSON.stringify(data)));
       console.log();
+      console.log();
     });
   }
 }
