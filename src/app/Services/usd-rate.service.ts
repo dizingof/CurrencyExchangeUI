@@ -8,14 +8,14 @@ export class UsdRateService {
   }
 
  getUsdCurrency(){
-    return this.http.get('https://kursvalut.somee.com/api/CurrencyRateList/GetCurrencyUsdList');
+    return this.http.get('https://gearhosttest2.eu1.gearhost.cloud/api/CurrencyRateList/GetCurrencyUsdList');
  }
 
   getEurCurrency(){
-    return this.http.get('https://kursvalut.somee.com/api/CurrencyRateList/GetCurrencyEurList');
+    return this.http.get('https://gearhosttest2.eu1.gearhost.cloud/api/CurrencyRateList/GetCurrencyEurList');
   }
 
   getRubCurrency(){
-    return this.http.get('https://kursvalut.somee.com/api/CurrencyRateList/GetCurrencyRubList');
+    return this.http.get('https://gearhosttest2.eu1.gearhost.cloud/api/CurrencyRateList/GetCurrencyRubList');
   }
 }
