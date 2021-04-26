@@ -15,7 +15,7 @@ export class HeaderComponent implements OnInit {
   constructor(public locationService: LocationService, public weatherByLocation: WeatherByLocationService) { }
 
   coordinates: Coordinates;
-  public weatherModels: WeatherModel[];
+  public weatherModels: WeatherModel;
 
   ngOnInit(): void {
     this.locationService.getPosition().then(pos =>
