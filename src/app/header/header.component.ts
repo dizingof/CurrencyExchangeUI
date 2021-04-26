@@ -15,12 +15,12 @@ export class HeaderComponent implements OnInit {
   constructor(public locationService: LocationService, public weatherByLocation: WeatherByLocationService) { }
 
   coordinates: Coordinates;
-  public weatherModels: WeatherModel;
+  public weatherModel: WeatherModel;
 
   ngOnInit(): void {
     this.locationService.getPosition().then(pos =>
     {
-      this.weatherByLocation.getWeatherByCoordinates(pos.lat, pos.lng).subscribe(data => this.weatherModels = JSON.parse(JSON.stringify(data)));
+      this.weatherByLocation.getWeatherByCoordinates(pos.lat, pos.lng).subscribe(data => this.weatherModel = JSON.parse(JSON.stringify(data)));
       console.log();
       console.log();
     });

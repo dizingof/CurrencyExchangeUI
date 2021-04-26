@@ -1,4 +1,4 @@
 export interface WeatherModel {
-  name: string;
+  location: string;
   temperature: number;
 }

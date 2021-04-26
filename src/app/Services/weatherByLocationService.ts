@@ -11,7 +11,7 @@ export class WeatherByLocationService {
 
 
    getWeatherByCoordinates(lat: number, lon: number){
-    return this.http.get(`https://localhost:44336/api/Weather/GetWeatherByLocation?lat=${lat}&lon=${lon}`);
+    return this.http.get(`https://gearhosttest2.eu1.gearhost.cloud/api/Weather/GetWeatherByLocation?lat=${lat}&lon=${lon}`);
   }
 
 }
