@@ -1,6 +1,6 @@
 export class Fuel{
-  Name: string;
-  A92: string;
-  A95: string;
-  Dt: string;
+  name: string;
+  a92: string;
+  a95: string;
+  dt: string;
 }

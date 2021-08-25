@@ -21,6 +21,7 @@ const appRoutes: Routes =  [
   {path: 'rateusd', component: RateUsdComponent},
   {path: 'rateeur', component: RateEurComponent},
   {path: 'raterub', component: RateRubComponent},
+  {path: 'ratefuel', component: FuelRateComponent},
 ];
 
 @NgModule({
