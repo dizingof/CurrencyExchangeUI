@@ -1,1 +1,14 @@
-<p>fuel-rate works!</p>
+<table class="table">
+  <tr>
+    <th align="left">Название АЗС</th>
+    <th>A-92</th>
+    <th>A-95</th>
+    <th>ДТ</th>
+  </tr>
+  <tr *ngFor="let fuel of fuels">
+    <th align="left" class="select">{{fuel?.name}}</th>
+    <th class="select">{{fuel?.a92}}</th>
+    <th class="select" >{{fuel?.a95}}</th>
+    <th class="select" >{{fuel?.dt}}</th>
+  </tr>
+</table>
