@@ -13,6 +13,7 @@ import { RateUsdComponent } from './rate-usd/rate-usd.component';
 import { RateEurComponent } from './rate-eur/rate-eur.component';
 import { RateRubComponent } from './rate-rub/rate-rub.component';
 import {Routes, RouterModule} from '@angular/router';
+import { FuelRateComponent } from './fuel-rate/fuel-rate.component';
 
 
 const appRoutes: Routes =  [
@@ -30,7 +31,8 @@ const appRoutes: Routes =  [
     KeysPipe,
     RateUsdComponent,
     RateEurComponent,
-    RateRubComponent
+    RateRubComponent,
+    FuelRateComponent
   ],
   imports: [
     BrowserModule,
