@@ -12,18 +12,21 @@
   </nav>-->
   <!-- Header -->
   <div id="header-wrapper">
+    <div class="featureLocationAndWeather"  align="right">
+      Температура {{weatherModel.temperature}} ℃
+      Ваша геолокация: {{weatherModel.location}}
+    </div>
     <div class="container">
       <div class="row">
         <div class="col-12">
 
           <header id="header">
-            <h1><a href="index.html" id="logo">Minimaxing</a></h1>
+            <h1><a href="index.html" id="logo">finansov.net</a></h1>
             <nav id="nav">
-              <a href="index.html" class="current-page-item">Homepage</a>
-              <a href="twocolumn1.html">Two Column #1</a>
-              <a href="twocolumn2.html">Two Column #2</a>
-              <a href="onecolumn.html">One Column</a>
-              <a href="threecolumn.html">Three Column</a>
+              <a routerLink="/rateusd">USD</a>
+              <a routerLink="/rateeur">EUR</a>
+              <a routerLink="/raterub">RUB</a>
+              <a routerLink="/ratefuel">Топливо</a>
             </nav>
           </header>
 
