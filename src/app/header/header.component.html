@@ -1,5 +1,5 @@
 ﻿<header>
-  <div align="right">
+  <!--<div align="right">
     Температура {{weatherModel.temperature}} ℃
     Ваша геолокация: {{weatherModel.location}}
   </div>
@@ -9,6 +9,29 @@
          <a routerLink="/rateusd">USD</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a routerLink="/rateeur">EUR</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a routerLink="/raterub">RUB</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a routerLink="/ratefuel">Топливо</a>
     </div>
 
-  </nav>
+  </nav>-->
+  <!-- Header -->
+  <div id="header-wrapper">
+    <div class="featureLocationAndWeather"  align="right">
+      Температура {{weatherModel.temperature}} ℃
+      Ваша геолокация: {{weatherModel.location}}
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
 
+          <header id="header">
+            <h1><a href="index.html" id="logo">netfinansov.online</a></h1>
+            <nav id="nav">
+              <a routerLink="/rateusd">USD</a>
+              <a routerLink="/rateeur">EUR</a>
+              <a routerLink="/raterub">RUB</a>
+              <a routerLink="/ratefuel">Топливо</a>
+            </nav>
+          </header>
+
+        </div>
+      </div>
+    </div>
+  </div>
 </header>
