@@ -8,6 +8,6 @@ export class FuelRateService {
   }
 
   getFuel(){
-    return this.http.get('https://testbackend.somee.com/api/FuelRateList/GetFuelList');
+    return this.http.get('https://testbackend1.somee.com/api/FuelRateList/GetFuelList');
   }
 }

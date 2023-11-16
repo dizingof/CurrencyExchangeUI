@@ -11,7 +11,7 @@ export class WeatherByLocationService {
 
 
    getWeatherByCoordinates(lat: number, lon: number){
-    return this.http.get(`https://testbackend.somee.com/api/Weather/GetWeatherByLocation?lat=${lat}&lon=${lon}`);
+    return this.http.get(`https://testbackend1.somee.com/api/Weather/GetWeatherByLocation?lat=${lat}&lon=${lon}`);
   }
 
 }
